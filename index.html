@@ -4,60 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/calculator.training/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
     <title>Calculator</title>
 </head>
 <body>
     <div class="main-container">
 
-        <div class="header">
-            <p class="main-greet">
-                Calculator by AQ
-            </p>
-            <p class="greet">
-                2022, training
-            </p>
-        </div>
+        <div class="container">
 
-        <div class="calc">
-
-            <output class="calc-result" id="result"></output>
-
-            <button type="button" class="calc-btn">AC</button>
-            <button type="button" class="calc-btn">BS</button>
-
-            <button type="button" class="calc-btn">7</button>
-            <button type="button" class="calc-btn">8</button>
-            <button type="button" class="calc-btn">9</button>
-            <button type="button" class="calc-btn">/</button>
-
-            <button type="button" class="calc-btn">4</button>
-            <button type="button" class="calc-btn">5</button>
-            <button type="button" class="calc-btn">6</button>
-            <button type="button" class="calc-btn">x</button>
-
-            <button type="button" class="calc-btn">1</button>
-            <button type="button" class="calc-btn">2</button>
-            <button type="button" class="calc-btn">3</button>
-            <button type="button" class="calc-btn">-</button>
-
-            <button type="button" class="calc-btn">0</button>
-            <button type="button" class="calc-btn">,</button>
-            <button type="button" class="calc-btn">+</button>
-
-            <button type="button" class="calc-btn">=</button>
-            <button type="button" class="calc-btn">(</button>
-            <button type="button" class="calc-btn">)</button>
-
-        </div>
-
-        <div class="description">
-
-            <p class="description">
-                *<strong>AC</strong> - All Clear
-            </p>
-            <p class="description">
-                *<strong>BS</strong> - Backspace
-            </p>
+            <div class="header">
+                <p class="main-greet">
+                    <strong>Calculator by AQ</strong>
+                </p>
+                <p class="greet">
+                    2022, training
+                </p>
+            </div>
+    
+            <div class="calc">
+    
+                <output class="calc-result" id="result">0</output>
+    
+                <button type="button" class="calc-btn special-btn reset-btn">AC</button>
+                <button type="button" class="calc-btn special-btn back-btn">BS</button>
+    
+                <button type="button" class="calc-btn">7</button>
+                <button type="button" class="calc-btn">8</button>
+                <button type="button" class="calc-btn">9</button>
+                <button type="button" class="calc-btn special-btn">/</button>
+    
+                <button type="button" class="calc-btn">4</button>
+                <button type="button" class="calc-btn">5</button>
+                <button type="button" class="calc-btn">6</button>
+                <button type="button" class="calc-btn special-btn">x</button>
+    
+                <button type="button" class="calc-btn">1</button>
+                <button type="button" class="calc-btn">2</button>
+                <button type="button" class="calc-btn">3</button>
+                <button type="button" class="calc-btn special-btn">-</button>
+    
+                <button type="button" class="calc-btn null-btn">0</button>
+                <button type="button" class="calc-btn">,</button>
+                <button type="button" class="calc-btn special-btn">+</button>
+    
+                <button type="button" class="calc-btn special-btn equal-btn">=</button>
+                <button type="button" class="calc-btn special-btn">(</button>
+                <button type="button" class="calc-btn special-btn">)</button>
+    
+            </div>
+    
+            <div class="description">
+    
+                <p class="description">
+                    *<strong>AC</strong> - All Clear
+                </p>
+                <p class="description">
+                    *<strong>BS</strong> - Backspace
+                </p>
+    
+            </div>
 
         </div>
     </div>
