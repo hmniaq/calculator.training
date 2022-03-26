@@ -13,16 +13,21 @@ calc.addEventListener("click", function(event) {
             break;
 
         case 'BS':
-            result.innerText = result.innerText.substring(0, value.length - 1);
+            result.innerText = result.innerText.substring(0, result.innerText.length - 1);
             break;
 
         case '=':
-            result.innerText = eval(result.innerText);
-            break;
+            try {
+                result.innerText = eval(result.innerText);
+                break;
+            }
+            catch(err){
+                result.innerText = "Error"
+                break;
+            }
         
 
         default:
             result.innerText += value;
     }
-
 });
